@@ -1,0 +1,1842 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Essaluna Homepage</title>
+    <script src="./vendor/react.js"></script>
+    <script src="./vendor/react-dom.js"></script>
+    <script src="./support.js"></script>
+  </head>
+  <body>
+    <x-dc>
+      <helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin=""
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=Figtree:wght@400;500;600&amp;display=swap"
+        />
+        <style>
+          body {
+            margin: 0;
+            background: #fbf5f4;
+          }
+          h1,
+          h2,
+          h3 {
+            font-family: "Bricolage Grotesque", system-ui, sans-serif;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+          }
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
+          a:hover {
+            color: #a8235b;
+          }
+        </style>
+      </helmet>
+      <div
+        style="
+          font-family: &quot;Figtree&quot;, system-ui, sans-serif;
+          color: #2e1522;
+          background: #fbf5f4;
+          font-size: 17px;
+          line-height: 1.55;
+        "
+      >
+        <!-- Announcement bar -->
+        <div
+          style="
+            background: #2e1522;
+            color: #f4e9ec;
+            text-align: center;
+            padding: 10px 24px;
+            font-size: 14px;
+          "
+        >
+          Delivered across Egypt in about 5 days &nbsp;·&nbsp; 14-day returns on
+          unopened items &nbsp;·&nbsp; Cruelty-free
+        </div>
+
+        <!-- Header -->
+        <header style="padding: 18px 24px; border-bottom: 1px solid #ebd9de">
+          <div
+            style="
+              max-width: 1200px;
+              margin: 0 auto;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: space-between;
+              gap: 16px 32px;
+            "
+          >
+            <a
+              href="#top"
+              style="
+                font-family:
+                  &quot;Bricolage Grotesque&quot;, system-ui, sans-serif;
+                font-size: 30px;
+                font-weight: 700;
+                letter-spacing: -0.03em;
+              "
+              >Essaluna</a
+            >
+            <nav
+              aria-label="Main"
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px 28px;
+                font-weight: 500;
+                font-size: 16px;
+              "
+            >
+              <a href="#shop">Shop</a>
+              <a href="#bundles">Routines &amp; bundles</a>
+              <a href="#why">Why prickly pear</a>
+              <a href="#story">About</a>
+              <a href="#faq">FAQ</a>
+              <a href="#contact">Contact</a>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 20px">
+              <a href="#" lang="ar" style="font-weight: 500; font-size: 16px"
+                >العربية</a
+              >
+              <a
+                href="#"
+                aria-label="Search"
+                style="
+                  display: flex;
+                  width: 44px;
+                  height: 44px;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2E1522"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <path d="M20 20l-3.5-3.5"></path>
+                </svg>
+              </a>
+              <a
+                href="#"
+                aria-label="Cart, 0 items"
+                style="
+                  display: flex;
+                  width: 44px;
+                  height: 44px;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#2E1522"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 8h14l-1.2 11H6.2L5 8z"></path>
+                  <path d="M9 8V6a3 3 0 016 0v2"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero -->
+        <section id="top" style="padding: 72px 24px 88px">
+          <div
+            style="
+              max-width: 1200px;
+              margin: 0 auto;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              gap: 56px;
+            "
+          >
+            <div
+              style="
+                flex: 1 1 460px;
+                min-width: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                align-items: flex-start;
+              "
+            >
+              <div
+                style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: {{accent}}"
+              >
+                Prickly pear skincare · Cairo
+              </div>
+              <h1 style="font-size: clamp(40px, 6vw, 72px); line-height: 1.02">
+                Formulated to the last drop.
+              </h1>
+              <p
+                style="
+                  margin: 0;
+                  font-size: 20px;
+                  max-width: 520px;
+                  color: #5a4350;
+                "
+              >
+                Five prickly pear formulas, developed by two sisters together
+                with cosmetic chemists, and made for women who read the label.
+              </p>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 14px;
+                  margin-top: 8px;
+                "
+              >
+                <a
+                  href="#bundles"
+                  style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 30px; background: {{accent}}; color: #FFFFFF; font-weight: 600; border-radius: 999px"
+                  >Shop the complete ritual</a
+                >
+                <a
+                  href="#shop"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    min-height: 52px;
+                    padding: 0 30px;
+                    border: 1.5px solid #2e1522;
+                    font-weight: 600;
+                    border-radius: 999px;
+                  "
+                  >Build your routine</a
+                >
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  font-size: 15px;
+                  color: #5a4350;
+                  margin-top: 4px;
+                "
+              >
+                <span
+                  style="color: {{accent}}; letter-spacing: 2px"
+                  aria-hidden="true"
+                  >★★★★★</span
+                >
+                <span>[RATING] from [NUMBER] verified reviews</span>
+              </div>
+            </div>
+            <div style="flex: 1 1 400px; min-width: 0">
+              <div
+                style="
+                  position: relative;
+                  height: 540px;
+                  border-radius: 28px;
+                  background: #f4dce3;
+                  overflow: hidden;
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: center;
+                "
+              >
+                <div
+                  style="
+                    position: absolute;
+                    width: 380px;
+                    height: 380px;
+                    border-radius: 50%;
+                    background: #e4eadb;
+                    top: 50px;
+                    left: 50%;
+                    margin-left: -190px;
+                  "
+                ></div>
+                <svg
+                  width="420"
+                  height="400"
+                  viewBox="0 0 420 400"
+                  style="position: relative"
+                  role="img"
+                  aria-label="Placeholder illustration of a jar, a pump bottle and a dropper bottle"
+                >
+                  <rect
+                    x="30"
+                    y="230"
+                    width="150"
+                    height="110"
+                    rx="18"
+                    fill="#FFFFFF"
+                  ></rect>
+                  <rect
+                    x="30"
+                    y="200"
+                    width="150"
+                    height="40"
+                    rx="10"
+                    fill="#3F5A3C"
+                  ></rect>
+                  <rect
+                    x="150"
+                    y="90"
+                    width="110"
+                    height="250"
+                    rx="22"
+                    fill="{{accent}}"
+                  ></rect>
+                  <rect
+                    x="190"
+                    y="50"
+                    width="30"
+                    height="50"
+                    rx="6"
+                    fill="#2E1522"
+                  ></rect>
+                  <rect
+                    x="190"
+                    y="38"
+                    width="70"
+                    height="16"
+                    rx="8"
+                    fill="#2E1522"
+                  ></rect>
+                  <rect
+                    x="285"
+                    y="150"
+                    width="90"
+                    height="190"
+                    rx="18"
+                    fill="#FFFFFF"
+                  ></rect>
+                  <rect
+                    x="305"
+                    y="104"
+                    width="50"
+                    height="50"
+                    rx="10"
+                    fill="#2E1522"
+                  ></rect>
+                  <ellipse
+                    cx="330"
+                    cy="92"
+                    rx="18"
+                    ry="14"
+                    fill="#2E1522"
+                  ></ellipse>
+                  <rect
+                    x="20"
+                    y="340"
+                    width="370"
+                    height="10"
+                    rx="5"
+                    fill="#2E1522"
+                    opacity="0.12"
+                  ></rect>
+                </svg>
+                <div
+                  style="
+                    position: absolute;
+                    bottom: 16px;
+                    left: 20px;
+                    font-size: 13px;
+                    color: #5a4350;
+                  "
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Trust strip -->
+        <section
+          style="
+            background: #ffffff;
+            border-top: 1px solid #ebd9de;
+            border-bottom: 1px solid #ebd9de;
+            padding: 36px 24px;
+          "
+        >
+          <div
+            style="
+              max-width: 1200px;
+              margin: 0 auto;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 24px 40px;
+              justify-content: space-between;
+            "
+          >
+            <div
+              style="
+                flex: 1 1 220px;
+                display: flex;
+                gap: 14px;
+                align-items: flex-start;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="{{accent}}"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 21c-5-3.5-8-6.7-8-10.5A4.5 4.5 0 0112 8a4.5 4.5 0 018 2.5c0 3.8-3 7-8 10.5z"
+                ></path>
+              </svg>
+              <div>
+                <div style="font-weight: 600">Cruelty-free</div>
+                <div style="font-size: 15px; color: #5a4350">
+                  [ADD CERTIFIER OR LOGO]
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                flex: 1 1 220px;
+                display: flex;
+                gap: 14px;
+                align-items: flex-start;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="{{accent}}"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M9 3h6"></path>
+                <path
+                  d="M10 3v6l-5 9a2 2 0 001.8 3h10.4a2 2 0 001.8-3l-5-9V3"
+                ></path>
+              </svg>
+              <div>
+                <div style="font-weight: 600">
+                  Developed with cosmetic chemists
+                </div>
+                <div style="font-size: 15px; color: #5a4350">
+                  Every active specified and tested
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                flex: 1 1 220px;
+                display: flex;
+                gap: 14px;
+                align-items: flex-start;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="{{accent}}"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 7h11v9H3z"></path>
+                <path d="M14 10h4l3 3v3h-7z"></path>
+                <circle cx="7" cy="18" r="1.8"></circle>
+                <circle cx="17" cy="18" r="1.8"></circle>
+              </svg>
+              <div>
+                <div style="font-weight: 600">Delivered across Egypt</div>
+                <div style="font-size: 15px; color: #5a4350">About 5 days</div>
+              </div>
+            </div>
+            <div
+              style="
+                flex: 1 1 220px;
+                display: flex;
+                gap: 14px;
+                align-items: flex-start;
+              "
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="{{accent}}"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 12a8 8 0 018-8 8 8 0 017 4"></path>
+                <path d="M19 4v4h-4"></path>
+                <path d="M20 12a8 8 0 01-8 8 8 8 0 01-7-4"></path>
+                <path d="M5 20v-4h4"></path>
+              </svg>
+              <div>
+                <div style="font-weight: 600">14-day returns</div>
+                <div style="font-size: 15px; color: #5a4350">
+                  On unused, unopened products
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Why prickly pear -->
+        <section id="why" style="padding: 96px 24px">
+          <div
+            style="
+              max-width: 1200px;
+              margin: 0 auto;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 56px;
+              align-items: center;
+            "
+          >
+            <div style="flex: 1 1 420px; min-width: 0">
+              <div
+                style="
+                  height: 440px;
+                  border-radius: 28px;
+                  background: #e4eadb;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  position: relative;
+                "
+              >
+                <svg
+                  width="260"
+                  height="300"
+                  viewBox="0 0 260 300"
+                  role="img"
+                  aria-label="Placeholder illustration of a prickly pear fruit on a pad"
+                >
+                  <ellipse
+                    cx="130"
+                    cy="210"
+                    rx="96"
+                    ry="70"
+                    fill="#3F5A3C"
+                  ></ellipse>
+                  <ellipse
+                    cx="130"
+                    cy="110"
+                    rx="58"
+                    ry="84"
+                    fill="{{accent}}"
+                  ></ellipse>
+                  <circle cx="112" cy="80" r="4" fill="#F4DCE3"></circle>
+                  <circle cx="146" cy="96" r="4" fill="#F4DCE3"></circle>
+                  <circle cx="120" cy="122" r="4" fill="#F4DCE3"></circle>
+                  <circle cx="148" cy="140" r="4" fill="#F4DCE3"></circle>
+                  <circle cx="104" cy="156" r="4" fill="#F4DCE3"></circle>
+                </svg>
+              </div>
+            </div>
+            <div
+              style="
+                flex: 1 1 460px;
+                min-width: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+                align-items: flex-start;
+              "
+            >
+              <div
+                style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: {{accent}}"
+              >
+                Why prickly pear
+              </div>
+              <h2 style="font-size: clamp(32px, 4vw, 48px); line-height: 1.08">
+                One hero ingredient. Five formulas built around it.
+              </h2>
+              <p style="margin: 0; color: #5a4350">
+                Every Essaluna formula starts with prickly pear. In the Face
+                Cream, prickly pear seed oil works with hyaluronic acid and
+                panthenol to help hydrate, smooth and renew the skin.
+              </p>
+              <p style="margin: 0; color: #5a4350">
+                [SOURCING STORY: where the fruit is grown, how the oil is
+                pressed, why it was chosen]
+              </p>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                  width: 100%;
+                  margin-top: 6px;
+                "
+              >
+                <div
+                  style="
+                    background: #ffffff;
+                    border: 1px solid #ebd9de;
+                    border-radius: 16px;
+                    padding: 16px 20px;
+                  "
+                >
+                  <strong>Prickly pear seed oil</strong
+                  ><span style="color: #5a4350">
+                    — the hero of every formula</span
+                  >
+                </div>
+                <div
+                  style="
+                    background: #ffffff;
+                    border: 1px solid #ebd9de;
+                    border-radius: 16px;
+                    padding: 16px 20px;
+                  "
+                >
+                  <strong>Hyaluronic acid</strong
+                  ><span style="color: #5a4350">
+                    — draws in and holds moisture</span
+                  >
+                </div>
+                <div
+                  style="
+                    background: #ffffff;
+                    border: 1px solid #ebd9de;
+                    border-radius: 16px;
+                    padding: 16px 20px;
+                  "
+                >
+                  <strong>Panthenol</strong
+                  ><span style="color: #5a4350">
+                    — supports a comfortable, smooth feel</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Routine / shop -->
+        <section
+          id="shop"
+          style="
+            background: #ffffff;
+            border-top: 1px solid #ebd9de;
+            padding: 96px 24px;
+          "
+        >
+          <div
+            style="
+              max-width: 1200px;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              gap: 48px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                max-width: 640px;
+              "
+            >
+              <div
+                style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: {{accent}}"
+              >
+                Build your routine
+              </div>
+              <h2 style="font-size: clamp(32px, 4vw, 48px); line-height: 1.08">
+                Four steps. Start with one, or take the set.
+              </h2>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 24px">
+              <div
+                style="
+                  flex: 1 1 210px;
+                  min-width: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    height: 250px;
+                    border-radius: 22px;
+                    background: #f4dce3;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                  "
+                >
+                  <svg
+                    width="110"
+                    height="170"
+                    viewBox="0 0 110 170"
+                    role="img"
+                    aria-label="Placeholder pump bottle"
+                  >
+                    <rect
+                      x="20"
+                      y="50"
+                      width="70"
+                      height="110"
+                      rx="16"
+                      fill="#FFFFFF"
+                    ></rect>
+                    <rect
+                      x="42"
+                      y="22"
+                      width="26"
+                      height="32"
+                      rx="5"
+                      fill="#2E1522"
+                    ></rect>
+                    <rect
+                      x="42"
+                      y="12"
+                      width="48"
+                      height="12"
+                      rx="6"
+                      fill="#2E1522"
+                    ></rect>
+                  </svg>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 12px;
+                      left: 12px;
+                      background: #2e1522;
+                      color: #ffffff;
+                      font-size: 12px;
+                      font-weight: 600;
+                      padding: 4px 10px;
+                      border-radius: 999px;
+                    "
+                  >
+                    1 · Cleanse
+                  </div>
+                </div>
+                <h3 style="font-size: 20px; line-height: 1.2">
+                  Prickly Pear Cleanser Foam
+                </h3>
+                <div style="font-size: 15px; color: #5a4350">
+                  A foaming cleanse to begin the routine
+                </div>
+                <div style="font-size: 14px; color: #5a4350">
+                  [SIZE] ml · ★ [RATING]
+                </div>
+                <div style="font-weight: 600; font-size: 18px">LE 529</div>
+                <button
+                  type="button"
+                  style="
+                    min-height: 48px;
+                    border: 1.5px solid #2e1522;
+                    background: transparent;
+                    border-radius: 999px;
+                    font-family: inherit;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #2e1522;
+                    cursor: pointer;
+                  "
+                >
+                  Add to cart
+                </button>
+              </div>
+
+              <div
+                style="
+                  flex: 1 1 210px;
+                  min-width: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    height: 250px;
+                    border-radius: 22px;
+                    background: #e4eadb;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                  "
+                >
+                  <svg
+                    width="90"
+                    height="180"
+                    viewBox="0 0 90 180"
+                    role="img"
+                    aria-label="Placeholder tube"
+                  >
+                    <rect
+                      x="18"
+                      y="14"
+                      width="54"
+                      height="130"
+                      rx="12"
+                      fill="#FFFFFF"
+                    ></rect>
+                    <rect
+                      x="26"
+                      y="144"
+                      width="38"
+                      height="22"
+                      rx="5"
+                      fill="#3F5A3C"
+                    ></rect>
+                  </svg>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 12px;
+                      left: 12px;
+                      background: #2e1522;
+                      color: #ffffff;
+                      font-size: 12px;
+                      font-weight: 600;
+                      padding: 4px 10px;
+                      border-radius: 999px;
+                    "
+                  >
+                    2 · Exfoliate
+                  </div>
+                </div>
+                <h3 style="font-size: 20px; line-height: 1.2">
+                  Prickly Pear Exfoliating Gel
+                </h3>
+                <div style="font-size: 15px; color: #5a4350">
+                  A gel exfoliant for the second step
+                </div>
+                <div style="font-size: 14px; color: #5a4350">
+                  [SIZE] ml · ★ [RATING]
+                </div>
+                <div style="font-weight: 600; font-size: 18px">LE 569</div>
+                <button
+                  type="button"
+                  style="
+                    min-height: 48px;
+                    border: 1.5px solid #2e1522;
+                    background: transparent;
+                    border-radius: 999px;
+                    font-family: inherit;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #2e1522;
+                    cursor: pointer;
+                  "
+                >
+                  Add to cart
+                </button>
+              </div>
+
+              <div
+                style="
+                  flex: 1 1 210px;
+                  min-width: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    height: 250px;
+                    border-radius: 22px;
+                    background: #f4dce3;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                  "
+                >
+                  <svg
+                    width="120"
+                    height="120"
+                    viewBox="0 0 120 120"
+                    role="img"
+                    aria-label="Placeholder jar"
+                  >
+                    <rect
+                      x="14"
+                      y="48"
+                      width="92"
+                      height="58"
+                      rx="14"
+                      fill="#FFFFFF"
+                    ></rect>
+                    <rect
+                      x="14"
+                      y="30"
+                      width="92"
+                      height="26"
+                      rx="8"
+                      fill="#3F5A3C"
+                    ></rect>
+                  </svg>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 12px;
+                      left: 12px;
+                      background: #2e1522;
+                      color: #ffffff;
+                      font-size: 12px;
+                      font-weight: 600;
+                      padding: 4px 10px;
+                      border-radius: 999px;
+                    "
+                  >
+                    3 · Treat
+                  </div>
+                </div>
+                <h3 style="font-size: 20px; line-height: 1.2">
+                  Prickly Pear Eye Cream
+                </h3>
+                <div style="font-size: 15px; color: #5a4350">
+                  Targeted care for the eye area
+                </div>
+                <div style="font-size: 14px; color: #5a4350">
+                  [SIZE] ml · ★ [RATING]
+                </div>
+                <div style="font-weight: 600; font-size: 18px">LE 659</div>
+                <button
+                  type="button"
+                  style="
+                    min-height: 48px;
+                    border: 1.5px solid #2e1522;
+                    background: transparent;
+                    border-radius: 999px;
+                    font-family: inherit;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #2e1522;
+                    cursor: pointer;
+                  "
+                >
+                  Add to cart
+                </button>
+              </div>
+
+              <div
+                style="
+                  flex: 1 1 210px;
+                  min-width: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    height: 250px;
+                    border-radius: 22px;
+                    background: #e4eadb;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                  "
+                >
+                  <svg
+                    width="100"
+                    height="170"
+                    viewBox="0 0 100 170"
+                    role="img"
+                    aria-label="Placeholder dropper bottle"
+                  >
+                    <rect
+                      x="20"
+                      y="60"
+                      width="60"
+                      height="100"
+                      rx="14"
+                      fill="{{accent}}"
+                    ></rect>
+                    <rect
+                      x="38"
+                      y="30"
+                      width="24"
+                      height="34"
+                      rx="5"
+                      fill="#2E1522"
+                    ></rect>
+                    <ellipse
+                      cx="50"
+                      cy="22"
+                      rx="16"
+                      ry="14"
+                      fill="#2E1522"
+                    ></ellipse>
+                  </svg>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 12px;
+                      left: 12px;
+                      background: #2e1522;
+                      color: #ffffff;
+                      font-size: 12px;
+                      font-weight: 600;
+                      padding: 4px 10px;
+                      border-radius: 999px;
+                    "
+                  >
+                    3 · Treat
+                  </div>
+                </div>
+                <h3 style="font-size: 20px; line-height: 1.2">
+                  Prickly Pear Seed Oil
+                </h3>
+                <div style="font-size: 15px; color: #5a4350">
+                  Pure prickly pear seed oil
+                </div>
+                <div style="font-size: 14px; color: #5a4350">
+                  [SIZE] ml · ★ [RATING]
+                </div>
+                <div style="font-weight: 600; font-size: 18px">LE 699</div>
+                <button
+                  type="button"
+                  style="
+                    min-height: 48px;
+                    border: 1.5px solid #2e1522;
+                    background: transparent;
+                    border-radius: 999px;
+                    font-family: inherit;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #2e1522;
+                    cursor: pointer;
+                  "
+                >
+                  Add to cart
+                </button>
+              </div>
+
+              <div
+                style="
+                  flex: 1 1 210px;
+                  min-width: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    height: 250px;
+                    border-radius: 22px;
+                    background: #f4dce3;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                  "
+                >
+                  <svg
+                    width="130"
+                    height="130"
+                    viewBox="0 0 130 130"
+                    role="img"
+                    aria-label="Placeholder large jar"
+                  >
+                    <rect
+                      x="12"
+                      y="52"
+                      width="106"
+                      height="66"
+                      rx="16"
+                      fill="#FFFFFF"
+                    ></rect>
+                    <rect
+                      x="12"
+                      y="32"
+                      width="106"
+                      height="28"
+                      rx="9"
+                      fill="{{accent}}"
+                    ></rect>
+                  </svg>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 12px;
+                      left: 12px;
+                      background: #2e1522;
+                      color: #ffffff;
+                      font-size: 12px;
+                      font-weight: 600;
+                      padding: 4px 10px;
+                      border-radius: 999px;
+                    "
+                  >
+                    4 · Moisturize
+                  </div>
+                </div>
+                <h3 style="font-size: 20px; line-height: 1.2">
+                  Prickly Pear Face Cream
+                </h3>
+                <div style="font-size: 15px; color: #5a4350">
+                  Hydrates, smooths and renews, morning and/or night
+                </div>
+                <div style="font-size: 14px; color: #5a4350">
+                  [SIZE] ml · ★ [RATING]
+                </div>
+                <div style="font-weight: 600; font-size: 18px">LE 699</div>
+                <button
+                  type="button"
+                  style="min-height: 48px; border: none; background: {{accent}}; border-radius: 999px; font-family: inherit; font-weight: 600; font-size: 16px; color: #FFFFFF; cursor: pointer"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bundles -->
+        <section id="bundles" style="padding: 96px 24px">
+          <div
+            style="
+              max-width: 1200px;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              gap: 48px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                max-width: 640px;
+              "
+            >
+              <div
+                style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: {{accent}}"
+              >
+                Routines &amp; bundles
+              </div>
+              <h2 style="font-size: clamp(32px, 4vw, 48px); line-height: 1.08">
+                The routine, already put together.
+              </h2>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                align-items: stretch;
+              "
+            >
+              <div
+                style="
+                  flex: 1 1 320px;
+                  min-width: 0;
+                  background: #ffffff;
+                  border: 1px solid #ebd9de;
+                  border-radius: 24px;
+                  padding: 32px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 14px;
+                "
+              >
+                <div
+                  style="
+                    align-self: flex-start;
+                    background: #e4eadb;
+                    color: #2f4a2c;
+                    font-size: 13px;
+                    font-weight: 600;
+                    padding: 5px 12px;
+                    border-radius: 999px;
+                  "
+                >
+                  Save 29%
+                </div>
+                <h3 style="font-size: 28px">Day package</h3>
+                <div style="color: #5a4350; font-size: 15px">
+                  Includes: [LIST PRODUCTS]
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: baseline;
+                    gap: 12px;
+                    margin-top: auto;
+                  "
+                >
+                  <span style="font-size: 30px; font-weight: 700">LE 1,299</span
+                  ><span style="color: #5a4350; text-decoration: line-through"
+                    >LE 1,824</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  style="
+                    min-height: 50px;
+                    border: 1.5px solid #2e1522;
+                    background: transparent;
+                    border-radius: 999px;
+                    font-family: inherit;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #2e1522;
+                    cursor: pointer;
+                  "
+                >
+                  Add to cart
+                </button>
+              </div>
+
+              <div
+                style="
+                  flex: 1 1 320px;
+                  min-width: 0;
+                  background: #ffffff;
+                  border: 1px solid #ebd9de;
+                  border-radius: 24px;
+                  padding: 32px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 14px;
+                "
+              >
+                <div
+                  style="
+                    align-self: flex-start;
+                    background: #e4eadb;
+                    color: #2f4a2c;
+                    font-size: 13px;
+                    font-weight: 600;
+                    padding: 5px 12px;
+                    border-radius: 999px;
+                  "
+                >
+                  Save 27%
+                </div>
+                <h3 style="font-size: 28px">Night package</h3>
+                <div style="color: #5a4350; font-size: 15px">
+                  Includes: [LIST PRODUCTS]
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: baseline;
+                    gap: 12px;
+                    margin-top: auto;
+                  "
+                >
+                  <span style="font-size: 30px; font-weight: 700">LE 1,799</span
+                  ><span style="color: #5a4350; text-decoration: line-through"
+                    >LE 2,456</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  style="
+                    min-height: 50px;
+                    border: 1.5px solid #2e1522;
+                    background: transparent;
+                    border-radius: 999px;
+                    font-family: inherit;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #2e1522;
+                    cursor: pointer;
+                  "
+                >
+                  Add to cart
+                </button>
+              </div>
+
+              <div
+                style="
+                  flex: 1 1 320px;
+                  min-width: 0;
+                  background: #2e1522;
+                  color: #ffffff;
+                  border-radius: 24px;
+                  padding: 32px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 14px;
+                "
+              >
+                <div
+                  style="align-self: flex-start; background: {{accent}}; color: #FFFFFF; font-size: 13px; font-weight: 600; padding: 5px 12px; border-radius: 999px"
+                >
+                  Best value · Save 34%
+                </div>
+                <h3 style="font-size: 28px">The Complete Ritual</h3>
+                <div style="color: #e6d3da; font-size: 15px">
+                  Includes: [LIST PRODUCTS]
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: baseline;
+                    gap: 12px;
+                    margin-top: auto;
+                  "
+                >
+                  <span style="font-size: 30px; font-weight: 700">LE 2,000</span
+                  ><span style="color: #cdb8c0; text-decoration: line-through"
+                    >LE 3,015</span
+                  >
+                </div>
+                <button
+                  type="button"
+                  style="
+                    min-height: 50px;
+                    border: none;
+                    background: #ffffff;
+                    border-radius: 999px;
+                    font-family: inherit;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #2e1522;
+                    cursor: pointer;
+                  "
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Proof -->
+        <section style="background: #e4eadb; padding: 96px 24px">
+          <div
+            style="
+              max-width: 1200px;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              gap: 48px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: flex-end;
+                gap: 16px;
+              "
+            >
+              <h2
+                style="
+                  font-size: clamp(32px, 4vw, 48px);
+                  line-height: 1.08;
+                  max-width: 620px;
+                "
+              >
+                What customers say.
+              </h2>
+              <div style="font-size: 16px; color: #2f4a2c">
+                <span
+                  style="color: {{accent}}; letter-spacing: 2px"
+                  aria-hidden="true"
+                  >★★★★★</span
+                >
+                [RATING] from [NUMBER] reviews
+              </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 24px">
+              <figure
+                style="
+                  flex: 1 1 300px;
+                  min-width: 0;
+                  margin: 0;
+                  background: #ffffff;
+                  border-radius: 22px;
+                  padding: 28px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 14px;
+                "
+              >
+                <div
+                  style="color: {{accent}}; letter-spacing: 2px"
+                  aria-hidden="true"
+                >
+                  ★★★★★
+                </div>
+                <blockquote style="margin: 0">
+                  [CUSTOMER REVIEW: two or three sentences about results and how
+                  long they used the product]
+                </blockquote>
+                <figcaption style="font-size: 15px; color: #5a4350">
+                  [NAME] · [SKIN TYPE] · Verified purchase
+                </figcaption>
+              </figure>
+              <figure
+                style="
+                  flex: 1 1 300px;
+                  min-width: 0;
+                  margin: 0;
+                  background: #ffffff;
+                  border-radius: 22px;
+                  padding: 28px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 14px;
+                "
+              >
+                <div
+                  style="color: {{accent}}; letter-spacing: 2px"
+                  aria-hidden="true"
+                >
+                  ★★★★★
+                </div>
+                <blockquote style="margin: 0">
+                  [CUSTOMER REVIEW WITH PHOTO]
+                </blockquote>
+                <figcaption style="font-size: 15px; color: #5a4350">
+                  [NAME] · [SKIN TYPE] · Verified purchase
+                </figcaption>
+              </figure>
+              <figure
+                style="
+                  flex: 1 1 300px;
+                  min-width: 0;
+                  margin: 0;
+                  background: #ffffff;
+                  border-radius: 22px;
+                  padding: 28px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 14px;
+                "
+              >
+                <div
+                  style="color: {{accent}}; letter-spacing: 2px"
+                  aria-hidden="true"
+                >
+                  ★★★★★
+                </div>
+                <blockquote style="margin: 0">
+                  [CUSTOMER REVIEW OR PRESS QUOTE]
+                </blockquote>
+                <figcaption style="font-size: 15px; color: #5a4350">
+                  [NAME OR PUBLICATION]
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <!-- Founders -->
+        <section id="story" style="padding: 96px 24px">
+          <div
+            style="
+              max-width: 1200px;
+              margin: 0 auto;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 56px;
+              align-items: center;
+            "
+          >
+            <div
+              style="
+                flex: 1 1 460px;
+                min-width: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+                align-items: flex-start;
+              "
+            >
+              <div
+                style="font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: {{accent}}"
+              >
+                Our story
+              </div>
+              <h2 style="font-size: clamp(32px, 4vw, 48px); line-height: 1.08">
+                Two sisters, years inside the science of skin.
+              </h2>
+              <p style="margin: 0; color: #5a4350">
+                Essaluna was built by two sisters who studied every ingredient
+                and questioned every formula. They set the brief with leading
+                cosmetic chemists, specified each active, debated each
+                concentration, and tested until every product earned its place.
+              </p>
+              <p style="margin: 0; color: #5a4350">
+                [FOUNDER NAMES AND CREDENTIALS: training, years of experience,
+                the lab or manufacturer they work with]
+              </p>
+              <a
+                href="#"
+                style="display: inline-flex; align-items: center; min-height: 48px; font-weight: 600; border-bottom: 2px solid {{accent}}"
+                >Read the full story</a
+              >
+            </div>
+            <div style="flex: 1 1 400px; min-width: 0">
+              <div
+                style="
+                  height: 460px;
+                  border-radius: 28px;
+                  background: #f4dce3;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #5a4350;
+                  font-size: 14px;
+                "
+              >
+                [FOUNDERS PHOTO]
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section
+          id="faq"
+          style="
+            background: #ffffff;
+            border-top: 1px solid #ebd9de;
+            padding: 96px 24px;
+          "
+        >
+          <div
+            style="
+              max-width: 1200px;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              gap: 48px;
+            "
+          >
+            <h2 style="font-size: clamp(32px, 4vw, 48px); line-height: 1.08">
+              Good to know before you order.
+            </h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 24px">
+              <div
+                style="
+                  flex: 1 1 460px;
+                  min-width: 0;
+                  background: #fbf5f4;
+                  border-radius: 20px;
+                  padding: 28px;
+                "
+              >
+                <h3 style="font-size: 20px; margin-bottom: 8px">
+                  How long does delivery take?
+                </h3>
+                <p style="margin: 0; color: #5a4350">
+                  Delivery takes about 5 days.
+                </p>
+              </div>
+              <div
+                style="
+                  flex: 1 1 460px;
+                  min-width: 0;
+                  background: #fbf5f4;
+                  border-radius: 20px;
+                  padding: 28px;
+                "
+              >
+                <h3 style="font-size: 20px; margin-bottom: 8px">
+                  Can I return a product?
+                </h3>
+                <p style="margin: 0; color: #5a4350">
+                  Within 14 days if it is unused, unopened and in its original
+                  condition, with proof of purchase. For hygiene reasons, opened
+                  or used cosmetics cannot be returned or exchanged.
+                </p>
+              </div>
+              <div
+                style="
+                  flex: 1 1 460px;
+                  min-width: 0;
+                  background: #fbf5f4;
+                  border-radius: 20px;
+                  padding: 28px;
+                "
+              >
+                <h3 style="font-size: 20px; margin-bottom: 8px">
+                  What if my order arrives damaged?
+                </h3>
+                <p style="margin: 0; color: #5a4350">
+                  Contact us within 48 hours with photos. Eligible cases may
+                  receive a replacement or a refund.
+                </p>
+              </div>
+              <div
+                style="
+                  flex: 1 1 460px;
+                  min-width: 0;
+                  background: #fbf5f4;
+                  border-radius: 20px;
+                  padding: 28px;
+                "
+              >
+                <h3 style="font-size: 20px; margin-bottom: 8px">
+                  How do I use the Face Cream?
+                </h3>
+                <p style="margin: 0; color: #5a4350">
+                  Massage gently onto a clean face and neck, morning and/or
+                  night.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section style="padding: 88px 24px">
+          <div
+            style="
+              max-width: 760px;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              align-items: center;
+              text-align: center;
+            "
+          >
+            <h2 style="font-size: clamp(30px, 4vw, 42px); line-height: 1.1">
+              Routine tips and first access to new formulas.
+            </h2>
+            <p style="margin: 0; color: #5a4350">
+              [INCENTIVE: for example, a welcome offer on the first order]
+            </p>
+            <form
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                width: 100%;
+                justify-content: center;
+              "
+            >
+              <label for="email" style="position: absolute; left: -9999px"
+                >Email address</label
+              >
+              <input
+                id="email"
+                type="email"
+                placeholder="Your email"
+                style="
+                  flex: 1 1 280px;
+                  min-height: 52px;
+                  padding: 0 22px;
+                  border: 1.5px solid #cdb8c0;
+                  border-radius: 999px;
+                  font-family: inherit;
+                  font-size: 16px;
+                  background: #ffffff;
+                "
+              />
+              <button
+                type="button"
+                style="min-height: 52px; padding: 0 30px; border: none; background: {{accent}}; color: #FFFFFF; border-radius: 999px; font-family: inherit; font-weight: 600; font-size: 16px; cursor: pointer"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+          id="contact"
+          style="background: #2e1522; color: #f4e9ec; padding: 72px 24px 40px"
+        >
+          <div
+            style="
+              max-width: 1200px;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              gap: 48px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px 56px;
+                justify-content: space-between;
+              "
+            >
+              <div
+                style="
+                  flex: 1 1 260px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 14px;
+                "
+              >
+                <div
+                  style="
+                    font-family:
+                      &quot;Bricolage Grotesque&quot;, system-ui, sans-serif;
+                    font-size: 32px;
+                    font-weight: 700;
+                    letter-spacing: -0.03em;
+                  "
+                >
+                  Essaluna
+                </div>
+                <div style="color: #cdb8c0; font-size: 15px">
+                  Prickly pear skincare, formulated with cosmetic chemists.
+                </div>
+              </div>
+              <div
+                style="
+                  flex: 1 1 150px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  font-size: 15px;
+                "
+              >
+                <div style="font-weight: 600; margin-bottom: 4px">Shop</div>
+                <a href="#shop" style="color: #cdb8c0">Cleanser Foam</a>
+                <a href="#shop" style="color: #cdb8c0">Exfoliating Gel</a>
+                <a href="#shop" style="color: #cdb8c0">Eye Cream</a>
+                <a href="#shop" style="color: #cdb8c0">Seed Oil</a>
+                <a href="#shop" style="color: #cdb8c0">Face Cream</a>
+                <a href="#bundles" style="color: #cdb8c0">Bundles</a>
+              </div>
+              <div
+                style="
+                  flex: 1 1 150px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  font-size: 15px;
+                "
+              >
+                <div style="font-weight: 600; margin-bottom: 4px">Essaluna</div>
+                <a href="#story" style="color: #cdb8c0">About us</a>
+                <a href="#why" style="color: #cdb8c0">Why prickly pear</a>
+                <a href="#faq" style="color: #cdb8c0">FAQ</a>
+                <a href="#" style="color: #cdb8c0">Privacy policy</a>
+                <a href="#" style="color: #cdb8c0">Refund policy</a>
+                <a href="#" style="color: #cdb8c0">Terms of service</a>
+              </div>
+              <div
+                style="
+                  flex: 1 1 260px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  font-size: 15px;
+                "
+              >
+                <div style="font-weight: 600; margin-bottom: 4px">Contact</div>
+                <div style="color: #cdb8c0">
+                  Ahmed Mohamed Ibrahim St., Office B11, 8th District, Nasr
+                  City, Cairo, Egypt
+                </div>
+                <a href="mailto:info@essaluna.com" style="color: #cdb8c0"
+                  >info@essaluna.com</a
+                >
+                <a href="tel:+201104556593" style="color: #cdb8c0"
+                  >Call 0110 4556 593</a
+                >
+                <a
+                  href="https://api.whatsapp.com/send/?phone=201104556593"
+                  style="color: #cdb8c0"
+                  >Chat on WhatsApp</a
+                >
+                <div style="display: flex; gap: 18px; margin-top: 6px">
+                  <a
+                    href="https://www.instagram.com/essalunallc/"
+                    style="color: #f4e9ec; font-weight: 500"
+                    >Instagram</a
+                  >
+                  <a
+                    href="https://www.facebook.com/essalunallc"
+                    style="color: #f4e9ec; font-weight: 500"
+                    >Facebook</a
+                  >
+                  <a
+                    href="https://www.tiktok.com/@essalunallc"
+                    style="color: #f4e9ec; font-weight: 500"
+                    >TikTok</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                border-top: 1px solid #4a3340;
+                padding-top: 24px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 12px;
+                font-size: 14px;
+                color: #cdb8c0;
+              "
+            >
+              <div>© Essaluna. All rights reserved.</div>
+              <div>[PAYMENT METHODS ACCEPTED]</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </x-dc>
+    <script
+      type="text/x-dc"
+      data-dc-script
+      data-props='{"accent":{"editor":"color","default":"#A8235B","options":["#A8235B","#8E2A5C","#C2410C","#3F5A3C"]},"$preview":{"width":1440,"height":5400}}'
+    >
+      class Component extends DCLogic {
+        renderVals() {
+          return { accent: this.props.accent ?? '#A8235B' };
+        }
+      }
+    </script>
+  </body>
+</html>
